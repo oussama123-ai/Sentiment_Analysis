@@ -1,4 +1,5 @@
 # Sentiment Analysis with BERT :
+
 ## Abstract :
  
  Sentiment analysis has become very popular in both research and business due to the increasing amount of opinionated text from Internet users. Standard sentiment analysis deals with classifying the overall sentiment of a text, but this doesn’t include other important information such as towards which entity, topic or aspect within the text the sentiment is directed. Aspect-based sentiment analysis (ABSA) is a more complex task that consists in identifying both sentiments and aspects. This paper shows the potential of using the contextual word representations from the pre-trained language model BERT, together with a fine-tuning method with additional generated text, in order to solve out-of-domain ABSA and outperform previous state-of-the-art results on SemEval-2015 Task 12 subtask 2 and SemEval-2016 Task 5. To the best of our knowledge, no other existing work has been done on out-of-domain ABSA for aspect classification.
@@ -27,16 +28,11 @@ the workflow should be like this:
 # Datasets :
 
 If you want to train the model , after downloading it, you should create three files under the `data/sentiment_data` folder as `train.csv`, `validation.csv`, `test.csv`.
- 
-To create these files, do the following steps:
+ To create these files, do the following steps:
 - Download the Financial PhraseBank from the above link.
 - Get the path of `Sentences_50Agree.txt` file in the `FinancialPhraseBank-v1.0` zip.
 - Run the [datasets script](scripts/datasets.py):
-```python scripts/datasets.py --data_path /home/oussama/Bureau/Sentiments_analyses/data/sentiment_data/Sentences_AllAgree.txt
-
-# Challenge :
-
-we will work on facilitating the process of use soon , by programming a digital interface through which it is possible to obtain results for analyzing people's speech in a fast and sophisticated manner .
+python scripts/datasets.py --data_path /home/oussama/Bureau/Sentiments_analyses/data/sentiment_data/Sentences_AllAgree.txt
 
 
 # Predictions :
@@ -51,6 +47,9 @@ python predict.py but you should specified the text_path model_path in the code 
  
 Training is done in `Sentiment_Analysis.ipynb` notebook. The trained model will be saved to `models/classifier_model/finbert-sentiment`. You can find the training parameters in the notebook.
 
+# Challenge :
+
+we will work on facilitating the process of use soon , by programming a digital interface through which it is possible to obtain results for analyzing people's speech in a fast and sophisticated manner.
 
 
 
