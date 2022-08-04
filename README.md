@@ -33,9 +33,9 @@ To create these files, do the following steps:
 - Run the [datasets script](scripts/datasets.py):
 ```python scripts/datasets.py --data_path /home/oussama/Bureau/Sentiments_analyses/data/sentiment_data/Sentences_AllAgree.txt
 
-## Training
- 
-Training is done in `Sentiment_Analysis.ipynb` notebook. The trained model will be saved to `models/classifier_model/finbert-sentiment`. You can find the training parameters in the notebook.
+## Challenge :
+
+we will work on facilitating the process of use soon , by programming a digital interface through which it is possible to obtain results for analyzing people's speech in a fast and sophisticated manner .
 
 
 ## Predictions :
@@ -45,8 +45,12 @@ python scripts/predict.py --text_path test.txt --output_dir output/ --model_path
 if you want you can change the command line try :
 
 python predict.py but you should specified the text_path model_path
-in the code 
+in the code .
 
-## Challenge :
+## Training :
+ 
+Training is done in `Sentiment_Analysis.ipynb` notebook. The trained model will be saved to `models/classifier_model/finbert-sentiment`. You can find the training parameters in the notebook.
 
-we will work on facilitating the process of use soon , by programming a digital interface through which it is possible to obtain results for analyzing people's speech in a fast and sophisticated manner .
+
+
+
