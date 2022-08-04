@@ -1,0 +1,4 @@
+sentence,logit,prediction,sentiment_score
+"There is ""way more demand than is even available, so that’s good,"" said the CEO of Euronext Amsterdam, Maurice van Tilburg.",[0.8693028  0.01284052 0.11785662],positive,0.8564623
+"""It’s going to be an interesting hour of trade after opening this morning.""",[0.22605528 0.02161557 0.7523291 ],neutral,0.2044397
+Marathon estimates the value of its remaining stake in Protalix at $ 27 million,[0.0199909  0.01781597 0.9621932 ],neutral,0.0021749306
