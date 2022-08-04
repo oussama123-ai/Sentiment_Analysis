@@ -7,14 +7,15 @@
 
 FinBERT implementation relies on Hugging Face's `pytorch_pretrained_bert` library and their implementation of BERT for sequence classification tasks. `pytorch_pretrained_bert` is an earlier version of the [`transformers`]library. It is on the top of our priority to migrate the code for FinBERT to `transformers` in the near future.(https://aclanthology.org/W19-6120/)
 
-## Installing
+# Installing :
+
  Install the dependencies by creating the Conda environment 'Sentiment Analysis' from the given `environment.yml` file and
  activating it.
 ```
 conda env create -f environment.yml
 conda activate AnaSen
 ```
-## Models
+# Models :
 
 the workflow should be like this:
 * Create a directory for the model. For example: `models/sentiment/<model directory name>`
@@ -23,7 +24,7 @@ the workflow should be like this:
 * Put a copy of `config.json` in this same directory. 
 * Call the model with `.from_pretrained(<model directory name>)`
 
-## Datasets :
+# Datasets :
 
 If you want to train the model , after downloading it, you should create three files under the `data/sentiment_data` folder as `train.csv`, `validation.csv`, `test.csv`.
  
@@ -33,21 +34,20 @@ To create these files, do the following steps:
 - Run the [datasets script](scripts/datasets.py):
 ```python scripts/datasets.py --data_path /home/oussama/Bureau/Sentiments_analyses/data/sentiment_data/Sentences_AllAgree.txt
 
-## Challenge :
+# Challenge :
 
 we will work on facilitating the process of use soon , by programming a digital interface through which it is possible to obtain results for analyzing people's speech in a fast and sophisticated manner .
 
 
-## Predictions :
+# Predictions :
 
 python scripts/predict.py --text_path test.txt --output_dir output/ --model_path models/classifier_model/finbert-sentiment
 
 if you want you can change the command line try :
 
-python predict.py but you should specified the text_path model_path
-in the code .
+python predict.py but you should specified the text_path model_path in the code .
 
-## Training :
+# Training :
  
 Training is done in `Sentiment_Analysis.ipynb` notebook. The trained model will be saved to `models/classifier_model/finbert-sentiment`. You can find the training parameters in the notebook.
 
