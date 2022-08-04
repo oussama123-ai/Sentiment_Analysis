@@ -34,6 +34,9 @@ If you want to train the model , after downloading it, you should create three f
 - Run the [datasets script](scripts/datasets.py):
 python scripts/datasets.py --data_path /home/oussama/Bureau/Sentiments_analyses/data/sentiment_data/Sentences_AllAgree.txt
 
+# Training :
+ 
+Training is done in `Sentiment_Analysis.ipynb` notebook. The trained model will be saved to `models/classifier_model/finbert-sentiment`. You can find the training parameters in the notebook.
 
 # Predictions :
 
@@ -43,9 +46,6 @@ if you want you can change the command line try :
 
 python predict.py but you should specified the text_path model_path in the code .
 
-# Training :
- 
-Training is done in `Sentiment_Analysis.ipynb` notebook. The trained model will be saved to `models/classifier_model/finbert-sentiment`. You can find the training parameters in the notebook.
 
 # Challenge :
 
